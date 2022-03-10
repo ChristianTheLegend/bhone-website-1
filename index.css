@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container1 {
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 {
+  width: 100vw;
+  height: 100px;
+  background-color: #b8e986;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 p {
+  text-align: center;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b8e986;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.container1 model-viewer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  animation-name: load_info;
+  animation-play-state: running;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+}
+
+.text h1 {
+  animation-name: load_title;
+  animation-play-state: running;
+  animation-duration: 3s;
+  padding: 0;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load_title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes load_info {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.custom-shape-divider-bottom-1646888900 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646888900 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1646888900 .shape-fill {
+  fill: #b8e986;
+}
