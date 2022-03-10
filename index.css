@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
 * {
-  font-family: "Ubuntu", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -31,9 +30,6 @@
 }
 
 .footer {
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #b8e986;
 }
 
